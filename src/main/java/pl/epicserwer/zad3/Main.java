@@ -7,12 +7,12 @@ public class Main {
     }
 
     private static void charByIdFromString(String string,int id){//1 zad
-        if(string.length() <= id) return;
-        String letter = string.split("")[id];
-        System.out.println("The character at position "+id+" is "+letter);
+        if(string.length() <= id) return;//aby nie wyszedł poza id
+        String letter = string.split("")[id];//zwrócenie litery
+        System.out.println("The character at position "+id+" is "+letter);//wyświetlenie
     }
 
     private static String addTwoString(String string1,String string2){//3 zad
         return string1+string2;
-    }
+    }//konkatenacja 2 stringow
 }

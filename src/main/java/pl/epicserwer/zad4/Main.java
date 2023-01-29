@@ -15,9 +15,9 @@ public class Main {
     }
 
     private static void luckyNumber(){//zad 1
-        for (int i = 1; i < 21; i++) {
-            if(i == 13) System.out.println("To moja szczesliwa liczba");
-            System.out.println(i);
+        for (int i = 1; i < 21; i++) {//petla 1 do 20
+            if(i == 13) System.out.println("To moja szczesliwa liczba");//jesli i = 13
+            System.out.println(i);//wypisanie
         }
     }
 
@@ -38,13 +38,13 @@ public class Main {
         System.out.println(getArrayString(array));
 
         HashMap<Integer,Integer> elementsHashmap = getHashmapElementsArray(array);
-        System.out.println(elementsHashmap);
+        System.out.println(elementsHashmap);//zliczanie elementów za pomocą hashmapy
         System.out.println("Suma elementow "+getSumOfArrayElements(array));
-        System.out.println("Suma elementow "+getSumOfArrayElements(elementsHashmap));//wykorzystuje hashmape
+        System.out.println("Suma elementow "+getSumOfArrayElements(elementsHashmap));//wykorzystuje hashmape z poprzedniego zadania
 
     }
 
-    private static int[] getArray(int size){
+    private static int[] getArray(int size){//generator tablicy
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++)
