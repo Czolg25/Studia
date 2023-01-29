@@ -5,7 +5,9 @@ public class Hour {
     private final int minute;
     private final int hour;
 
-    public Hour(long second){
+    public Hour(long second){//kontuktor
+
+        //oblicza sekundy godziny i minuty
         this.second = (int) (second % 60);
         second = (second - this.second) / 60;
 
@@ -15,7 +17,7 @@ public class Hour {
         this.hour = (int) (second % 24);
     }
 
-    @Override
+    @Override//metoda to String
     public String toString() {
         return this.hour+":"+this.minute+":"+this.second;
     }
